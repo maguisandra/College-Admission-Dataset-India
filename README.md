@@ -7,7 +7,7 @@ This comprehensive analysis explores the factors affecting student admissions in
 ## 1. Data Preparation and Cleaning (Excel)
 
 ### Importing and Cleaning
-The college admissions dataset was imported into Excel for initial processing. Key cleaning steps included removing duplicate entries, especially in the **ID_Student** column, to maintain data integrity.
+The college admissions dataset was imported into Excel for initial processing. Key cleaning steps included removing duplicate entries in power query, especially in the **ID_Student** column, to maintain data integrity.
 
 ### Data Validation Rules
 Specific validation rules were applied to each column to ensure consistent and accurate data:
@@ -23,7 +23,6 @@ Specific validation rules were applied to each column to ensure consistent and a
 | Entrance Exam           | Validation based on selected stream                |
 | Entrance Score          | Between 0 and 700                                  |
 | Board Percentage        | Between 0 and 100%                                 |
-| SRA Curricula Score     | Between 0 and 10                                   |
 | Extracurricular Score   | Between 0 and 10                                   |
 | Admission Probability   | Between 0 and 1                                    |
 
@@ -43,7 +42,7 @@ This creates a reliable foundation for further analysis in Power BI.
 ### Calculated Columns
 New columns were created to classify academic metrics, such as:
 - **Board Percentage Category** (High, Medium, Low)
-- **Extracurricular Score Category**
+- **Extracurricular Score Category**(High,Medium,Low)
 
 ### DAX Measures
 Key metrics were calculated using DAX, including:
@@ -66,8 +65,9 @@ This page contains KPIs and visualizations such as:
 - Age distribution (pie chart)
 - Category distribution (donut chart)
 - Student distribution by state (treemap)
+- KPI Total student
 
-Slicers include age, gender, category, and admission status.
+Slicers include age, gender, category, and state.
 
 **Insight:**  
 The student population is highly balanced across gender, age, category, and state.
